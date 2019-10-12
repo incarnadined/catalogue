@@ -16,6 +16,7 @@ def liveStream():
     
 
 def checkISBN(isbn):
+    isbn = str(isbn)
     if len(isbn) != 13:
         if len(isbn) != 0:
             print('{} is an invalid ISBN'.format(isbn))
@@ -76,9 +77,7 @@ if __name__ == '__main__':
     while True:
         #print(found)
         while checkISBN(isbn) != True:
-            isbn = str(found[-1])
-            print(type(isbn))
-    
+            isbn = str(found[-1])    
         print('ISBN validated')
         book = getData(isbn)
     
