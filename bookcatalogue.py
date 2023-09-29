@@ -126,12 +126,7 @@ if __name__ == '__main__':
     
     while True:
         while checkISBN(isbn) != True:
-<<<<<<< HEAD
             isbn = str(found[-1])    
-=======
-            isbn = found[-1]
                          
-    
->>>>>>> 92ab2407eb5ae8f83955a392359fdc7e1486a1ea
         print('ISBN validated')
         book = getData(isbn)   
